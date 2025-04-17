@@ -12,6 +12,10 @@ expo-env.d.ts
 #intelij
 .idea
 
+#environment variables
+.env
+.env.local
+
 # Native
 *.orig.*
 *.jks
