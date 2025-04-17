@@ -1,51 +1,48 @@
-# Welcome to your Expo app 👋
+# 🎬 Movie Flex
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Expo](https://img.shields.io/badge/Expo-4630EB?style=flat-square&logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Appwrite](https://img.shields.io/badge/Appwrite-F02E65?style=flat-square&logo=appwrite&logoColor=white)
 
-## Get started
+**Movie Flex** is a sleek and responsive mobile app built using **React Native (with Expo Go)** and **TypeScript**. It lets users search and browse movies with an elegant interface and smooth performance. The app uses **Appwrite** as its backend for future-ready features like user authentication, watchlists, and more.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📱 Features
 
-2. Start the app
+- 🔍 Debounced movie search for smooth UX
+- 🎞️ Movie grid layout with posters and titles
+- ⚡ Built with Expo Go for fast development
+- ☁️ Appwrite as the backend platform (database, auth, functions)
+- 💡 Strongly typed with TypeScript
+- 🔧 Modular and scalable project structure
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **React Native** (via [Expo Go](https://expo.dev/))
+- **TypeScript**
+- **Appwrite** – for backend services (auth, DB, storage)
+- **TMDb or custom API** – for movie data (via Appwrite Functions or direct fetch)
+- **Custom Hooks** for fetch/debounce
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🚀 Getting Started
 
-When you're ready, run:
+### 1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/movie-flex.git
+cd movie-flex
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Run the app
+```bash
+npx expo start
+```
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# movie-app-rn
+### Then scan the QR code using Expo Go on your mobile device.
