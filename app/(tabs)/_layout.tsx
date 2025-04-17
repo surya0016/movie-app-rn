@@ -19,10 +19,9 @@ const TabIcon = ({
 }:TabIconProps) => {
   if (focused){
     return (
-      <>
         <ImageBackground 
           source={image}
-          className='flex-1 flex-row w-full flex min-w-[112px] min-h-16 mt-4 justify-center items-center rounded-full overflow-hidden'
+          className='flex-1 flex-row w-full flex min-w-[92px] min-h-16 mt-4 justify-center items-center rounded-full overflow-hidden'
         >
           <Image 
             source={icon}
@@ -31,7 +30,6 @@ const TabIcon = ({
           />
           <Text className='text-secondary text-base font-semibold ml-2'>{title}</Text>
         </ImageBackground>
-      </>
     )
   }else{
     return(
@@ -56,7 +54,7 @@ const _Layout = () => {
         tabBarStyle:{
           backgroundColor: "#0f0d23",
           borderRadius: 50,
-          marginHorizontal: 20,
+          marginHorizontal: 10,
           marginBottom: 16,
           height: 52,
           position: "absolute",

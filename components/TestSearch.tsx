@@ -28,7 +28,7 @@ const Search = () => {
       } else {
         reset()
       }
-    }, 1000)
+    }, 500)
     
     return () => {
       clearTimeout(timeoutId)
@@ -57,14 +57,9 @@ const Search = () => {
             <SearchBar 
               placeholder='Search for a movie'
               onChangeText={handleChange}
-              value={query}
             />
             <>
-              {!loading && !error && query.length > 0 && (
-                <Text className='text-white font-bold text-lg mt-5 mb-3'>
-                  Results for '{query}'
-                </Text>
-              )}
+              <Text className='text-white font-bold text-lg mt-5 mb-3'>{query.length === 0 ? 'Search Movies' : `Results for '${query}'`}</Text>
               <FlatList
                 data={movies}
                 renderItem={({item})=>(
@@ -80,17 +75,8 @@ const Search = () => {
                   justifyContent:'flex-start',
                   gap:20,
                   marginBottom: 10,
-                  paddingRight: 5,
+                  paddingRight: 5
                 }}
-                ListEmptyComponent={
-                  !loading && !error ? (
-                    <View className='mt-10 px-5'>
-                      <Text className='text-center text-gray-500'>
-                        {query.trim() ? 'No movies fouond' : 'Search for a movie'}
-                      </Text>
-                    </View>
-                  ) : null
-                }
               />
             </>
           </View>
@@ -102,3 +88,5 @@ const Search = () => {
 }
 
 export default Search
+
+const styles = StyleSheet.create({})
